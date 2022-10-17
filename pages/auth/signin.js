@@ -1,6 +1,5 @@
 import { getProviders, signIn as SignIntoProvider } from 'next-auth/react';
 import Header from '../../components/Header';
-import instaBrosLogo from '../../assets/InstaBrosLogo.png';
 
 function signIn({ providers }) {
   return (
