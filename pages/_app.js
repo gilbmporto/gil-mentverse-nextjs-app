@@ -4,7 +4,7 @@ import { RecoilRoot } from 'recoil';
 
 function MyApp({ Component, pageProps: { session, ...pageProps } }) {
   return (
-    <SessionProvider session={session} refetchInterval={5 * 60} basePath='/auth/signin'>
+    <SessionProvider session={session} refetchInterval={5 * 60} basePath='api/auth/signin'>
       <RecoilRoot>
         <Component {...pageProps} />
       </RecoilRoot>
