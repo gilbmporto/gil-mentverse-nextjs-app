@@ -41,7 +41,7 @@ function Post({ id, username, userImg, img, caption }) {
     }
   }
 
-  //Function to post the comments at each post
+  //Function to post the comments at each post.
   const sendComment = async (e) => {
     e.preventDefault();
 
