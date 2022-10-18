@@ -53,7 +53,7 @@ function Header() {
           <HomeIcon onClick={() => router.push('/')} className='navBtn' />
           {session ? (
             <>
-              <PlusCircleIcon onClick={() => setOpen(true)} className='navBtn' />
+              <PlusCircleIcon onClick={() => setOpen(true)} className='navBtn md:hidden cursor-pointer' />
             </>
           ) : (
             <>
