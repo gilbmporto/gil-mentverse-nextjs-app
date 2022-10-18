@@ -37,7 +37,7 @@ function Header() {
         </div>
 
         {/* Middle */}
-        <div className='max-w-xs sm:max-w-[160px]'>
+        <div className='max-w-[80px] sm:max-w-xs'>
           <div className='relative mt-1 p-3 rounded-md '>
             <div className='absolute inset-y-0 pl-3 flex items-center pointer-events-none'>
               <SearchIcon className='h-5 w-5 text-gray-500' />
