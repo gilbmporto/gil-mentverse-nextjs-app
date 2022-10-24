@@ -6,19 +6,19 @@ function MiniProfile() {
 
   return (
     <div className='flex items-center justify-between mt-14 ml-10'>
-      
+
       {session && (
-        <img 
-        className='rounded-full border p-[2px] w-16 h-16'
-        src={session?.user?.image} 
-        alt='profile pic' 
+        <img
+          className='rounded-full border p-[2px] w-16 h-16'
+          src={session?.user?.image}
+          alt='profile pic'
         />
       )}
-      
+
 
       <div className='flex-1 mx-4'>
         <h2 className='font-bold'>{session?.user?.username}</h2>
-        <h3 className='text-sm text-gray-400'>Welcome to Instagram</h3>
+        <h3 className='text-sm text-gray-400'>Welcome to PicPost</h3>
       </div>
 
       <button onClick={signOut} className='text-blue-400 text-sm font-semibold'>
