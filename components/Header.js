@@ -37,7 +37,7 @@ function Header() {
         </div>
 
         {/* Middle */}
-        <div className='max-w-xs'>
+        <div className='max-w-[132px] sm:max-w-xs'>
           <div className='relative mt-1 p-3 rounded-md '>
             <div className='absolute inset-y-0 pl-3 flex items-center pointer-events-none'>
               <SearchIcon className='h-5 w-5 text-gray-500' />
@@ -53,7 +53,7 @@ function Header() {
           <HomeIcon onClick={() => router.push('/')} className='navBtn' />
           {session ? (
             <>
-              <MenuIcon className='h-6 md:hidden cursor-pointer' onClick={() => setOpen(true)} />
+              <PlusCircleIcon onClick={() => setOpen(true)} className='!h-6 md:hidden cursor-pointer hover:scale-125 transition-all duration-150 ease-out' />
             </>
           ) : (
             <>
@@ -76,7 +76,7 @@ function Header() {
                 onClick={signOut}
                 src={session.user.image}
                 alt='Profile Pic'
-                className='h-10 w-10 rounded-full cursor-pointer'
+                className='h-10 w-10 rounded-full cursor-pointer sm:w-7 sm:h-7'
               />
             </>
           ) : (
